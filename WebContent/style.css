@@ -1,0 +1,135 @@
+@CHARSET "ISO-8859-1";
+
+		.node {
+	  		cursor: pointer;
+		}
+		.node:hover {
+	  		stroke: #000;
+	  		stroke-width: 1.5px;
+		}
+		.node--leaf {
+	  		fill: white;
+		}
+		.label {
+			text-anchor: middle;
+			text-weight: bold;
+		}
+		.label--leaf{
+			/*font-family: "Times";
+	 	 	font-size: 13px ;*/
+	  		text-anchor: middle;  			
+		}
+		.label,
+		.node--root {
+	  		pointer-events: none;
+		}
+		.link {
+	  		stroke: #000;
+	  		stroke-width: 1.5px;
+		}	
+		.node-graph {
+	 		cursor: move;
+	  		fill: #ccc;
+	  		stroke: #000;
+	  		/*stroke-width: 1.5px;*/
+		}	
+		.node-graph.fixed {
+	 		fill: #f00;
+	 	}	
+	 	.line {
+	  		fill: none;
+	 		stroke: steelblue;
+	  		stroke-width: 2px;
+		}
+		td, th {
+	    	padding: 1px 4px;
+		}	
+		.slice text {
+	        font-size: 16pt;
+	        font-family: Arial;
+	    }    
+	    path {
+	  		stroke: #333;
+	  		stroke-width: 1.5px; 
+		}	
+		path:hover{
+			stroke: #333;
+	  		stroke-width: 3.5px; 
+	  		resize();
+		}
+		#chart {
+	        height: 360px;
+	        margin: 0 auto;                                               /* NEW */
+	        position: relative;
+	        width: 360px;
+	    }
+	    .legend {
+	        font-size: 12px;
+	    }
+	    rect {
+	        cursor: pointer;                                              /* NEW */
+	        stroke-width: 0.75;
+	    }
+	    rect.disabled {                                                 /* NEW */
+	        fill: transparent !important;                                 /* NEW */
+	    }                                                               /* NEW */
+	    h1 {                                                            /* NEW */
+	        font-size: 14px;                                              /* NEW */
+	        text-align: center;                                           /* NEW */
+	    }
+	    #title_circle{
+	      	margin: 0px;
+	      	position: absolute;
+	      	font-size: 30px;
+	      	left: 60px;
+	      	top: 5px;
+	    }
+	    #title {
+	      	margin: 0px;
+	      	position: absolute;
+	      	font-size: 30px;
+	      	left: 60px;
+	      	top: 5px;
+	    	cursor: pointer;
+	    }
+	    #paragraph_circle{
+	    	margin: 0px;
+	    	position: absolute;
+	    	top: 43px;
+	    	font-size: 20px;
+			color:black;    
+		}
+		#paragraph_cluster{
+	    	margin: 0px;
+	    	position: absolute;
+	    	top: 43px;
+	    	font-size: 14px;
+			color:black;    
+		}
+		#paragraph{
+			margin: 0px;
+	    	position: absolute;
+	    	top: 200px;
+	    	font-size: 15px;
+			color:black;
+		}
+		#back_img{
+			margin: 0px;
+			position: absolute;
+			cursor: pointer;
+		}
+	    #titlegraph {
+	      	margin: 0px;
+	      	position: absolute;
+	      	top: 165px;
+	      	left: 13px;
+	      	cursor: null;
+	      	z-index:-1;
+	      	font-size: 20px;
+	    }
+	    #titleAuthor, #titleChannel {
+	      	margin: 0px;
+	      	position: absolute;
+			font-size: 20px;
+			z-index:-1;
+	    }
